@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --fx: flex;
+    --nn: none;
+    --fxd: fixed;
+    --cr: center;
+    --white: #FFF;
+    --pnt: pointer;
+    --radius: 9999px;
+    --green: #7ED957;
+    --black: #191818;
+    --black1:rgba(2, 2, 2, 0.7);
+    --sb: space-between;
+    --shadow: 0 0 14px #7ED957;
+    --borda: 2px solid #7ED957;
+    --gst: "Geist", system-ui, sans-serif;
+    --inter: "Inter", system-ui, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#menu {
+    width: 97%;
+    height: 4rem;
+    z-index: 100;
+    display: var(--fx);
+    margin: 1rem 1.5rem;
+    padding: .1rem 4rem;
+    position: var(--fxd);
+    align-items: var(--cr);
+    backdrop-filter: blur(1px);
+    justify-content: var(--sb);
+    border-radius: var(--radius);
+}
+
+#imgLogoMenu {
+    width: 120px;
+}
+
+#menu_options {
+    gap: 2rem;
+    display: var(--fx);
+}
+
+.option_menu {
+    font-size: 11pt;
+    font-weight: 500;
+    color: var(--white);
+    font-family: var(--inter);
+    text-decoration: var(--nn);
+}
+
+.option_menu:hover {
+    color: var(--green);
+}
+
+.button {
+    font-weight: 600;
+    cursor: var(--pnt);
+    color: var(--white);
+    border: var(--borda);
+    padding: .3rem .5rem;
+    background: var(--green);
+    box-shadow: var(--shadow);
+    font-family: var(--inter);
+    border-radius: var(--radius);
+}
+
+#nav_btns_menu {
+    gap: 1rem;
+    display: var(--fx);
+}
+
+.button_secundary {
+    color: var(--green);
+    box-shadow: var(--nn);
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+.button_secundary:hover {
+    color: var(--white);
+    background: var(--green);
+    box-shadow: var(--shadow);
+}
+
+.icon_rotate {
+    transform: rotate(-45deg)
+}
+
+#content_main {
+    width: 100vw;
+    height: 100vh;
+    background: var(--cr) / cover url('img/imagem.jpg') no-repeat fixed;
+}
+
+#nav_main_text {
+    height: 100vh;
+    display: var(--fx);
+    text-align: center;
+    align-items: var(--cr);
+    background: var(--black1);
+    justify-content: var(--cr);
+    backdrop-filter: blur(1px);
+}
