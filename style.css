@@ -156,7 +156,7 @@ html {
 }
 
 .div_personalizada {
-    font-size: 22pt;
+    font-size: 30pt;
     padding-inline: 2px;   
     display: var(--inl);
     transform: rotate(-5deg);
@@ -224,6 +224,10 @@ html {
 
     #title_main {
         font-size: 30pt;
+    }
+
+    .div_personalizada {
+        font-size: 22pt;;
     }
 
 }
