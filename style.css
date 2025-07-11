@@ -105,6 +105,20 @@ html {
     transform: rotate(-45deg)
 }
 
+#nav_menu_hamburguer {
+    padding: 4px;
+    cursor: e-resize;
+    display: var(--nn);
+}
+
+#nav_menu_hamburguer .linha_hamburguer {
+    width: 35px;
+    height: 4px;
+    margin: 4px;
+    background: var(--green);
+    border-radius: var(--radius);
+}
+
 #content_main {
     width: 100vw;
     height: 100vh;
@@ -190,6 +204,10 @@ html {
     }
 
     .option_menu_mobile {
+        display: block;
+    }
+
+    #nav_menu_hamburguer {
         display: block;
     }
 
