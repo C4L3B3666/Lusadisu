@@ -120,6 +120,10 @@ html {
     border-radius: var(--radius);
 }
 
+#div_btn_tablet_hamburguer {
+    display: var(--nn)
+}
+
 #content_main_hero {
     width: 100vw;
     height: 100vh;
@@ -231,3 +235,76 @@ html {
     }
 
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+     #menu {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        padding-inline: 2rem;
+    }
+
+    #imgLogoMenu {
+        width: 100px;
+    }
+    
+    #nav_logo_menu, 
+    #nav_menu_hamburguer {
+        z-index: 100;
+    }
+
+    #menu_options {
+        top: 0;
+        right: 0;
+        width: 100vw;
+        z-index: 10;
+        height: 100vh;
+        padding-top: 3rem;
+        display: var(--fx);
+        position: var(--abs);
+        align-items: var(--cr);
+        background: var(--black1);
+        backdrop-filter: blur(6px);
+        justify-content: var(--sa);
+        flex-direction: var(--col);
+        transform: translateX(100%);
+    }
+
+    .link_btn_menu_desktop {
+        display: var(--nn);
+    }
+
+    .option_menu_mobile {
+        display: block;
+    }
+
+    #nav_menu_hamburguer {
+        gap: 1.1rem;
+        display: var(--fx);
+    }
+
+    #div_btn_mobile_hamburguer {
+        display: var(--nn)
+    }
+
+    #div_btn_tablet_hamburguer {
+        display: block;
+    }
+
+    #nav_main_text #div_content_text_nav_btns {
+        width: 100%;
+        padding-inline: 2rem;
+    }
+
+    #title_main {
+        font-size: 30pt;
+    }
+
+    .div_personalizada {
+        font-size: 22pt;;
+    }
+}
+
+/* @media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+} */
