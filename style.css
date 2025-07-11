@@ -208,7 +208,8 @@ html {
     }
 
     #nav_menu_hamburguer {
-        display: block;
+        gap: 1.1rem;
+        display: var(--fx);
     }
 
     #nav_main_text #div_content_text_nav_btns {
