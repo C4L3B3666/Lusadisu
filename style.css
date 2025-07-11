@@ -156,11 +156,12 @@ html {
 }
 
 .div_personalizada {
-    font-size: 25pt;
+    font-size: 22pt;
     padding-inline: 2px;   
     display: var(--inl);
     transform: rotate(-5deg);
     background: var(--green);
+    font-family: var(--gst);
 }
 
 #text_main {
