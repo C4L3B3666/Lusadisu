@@ -6,14 +6,18 @@
     --fxd: fixed;
     --cr: center;
     --white: #FFF;
+    --col: column;
     --pnt: pointer;
+    --abs: absolute;
     --radius: 9999px;
+    --sa: space-around;
     --green: #7ED957;
     --black: #191818;
-    --black1:rgba(2, 2, 2, 0.7);
     --sb: space-between;
+    --inl: inline-block;
     --shadow: 0 0 14px #7ED957;
     --borda: 2px solid #7ED957;
+    --black1:rgba(2, 2, 2, 0.7);
     --gst: "Geist", system-ui, sans-serif;
     --inter: "Inter", system-ui, sans-serif;
 }
@@ -31,7 +35,7 @@ html {
 #menu {
     width: 97%;
     height: 4rem;
-    z-index: 100;
+    z-index: 10;
     display: var(--fx);
     margin: 1rem 1.5rem;
     padding: .1rem 4rem;
@@ -49,6 +53,10 @@ html {
 #menu_options {
     gap: 2rem;
     display: var(--fx);
+}
+
+.option_menu_mobile {
+    display: var(--nn)
 }
 
 .option_menu {
@@ -111,4 +119,87 @@ html {
     background: var(--black1);
     justify-content: var(--cr);
     backdrop-filter: blur(1px);
+}
+
+#nav_main_text #div_content_text_nav_btns {
+    gap: 1rem;
+    width: 50%;
+    display: var(--fx);
+    align-items: var(--cr);
+    flex-direction: var(--col);
+}
+
+#nav_btns_hero {
+    gap: 1rem;
+    display: var(--fx);
+}
+
+#title_main {
+    font-size: 45pt;
+    color: var(--white);
+    font-family: var(--inter);
+}
+
+.div_personalizada {
+    padding-inline: 2px;   
+    display: var(--inl);
+    transform: rotate(-5deg);
+    background: var(--green);
+}
+
+#text_main {
+    font-weight: 200;
+    color: var(--white);
+    font-family: var(--inter)
+}
+
+@media screen and (max-width: 768px) {
+    #menu {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        padding-inline: 2rem;
+    }
+
+    #imgLogoMenu {
+        width: 100px;
+    }
+    
+    #nav_logo_menu {
+        z-index: 100;
+    }
+
+    #menu_options {
+        top: 0;
+        right: 0;
+        width: 100vw;
+        z-index: 10;
+        height: 100vh;
+        display: var(--fx);
+        position: var(--abs);
+        align-items: var(--cr);
+        background: var(--black1);
+        backdrop-filter: blur(4px);
+        justify-content: var(--sa);
+        flex-direction: var(--col);
+        transform: translateX(100%);
+    }
+
+    .link_btn_menu_desktop {
+        display: var(--nn);
+    }
+
+    .option_menu_mobile {
+        display: block;
+    }
+
+    #nav_main_text #div_content_text_nav_btns {
+        width: 100%;
+        padding-inline: 2rem;
+    }
+
+    #title_main {
+        font-size: 30pt;
+    }
+
 }
