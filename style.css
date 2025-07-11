@@ -59,7 +59,6 @@ html {
 
 #menu_options {
     gap: 2rem;
-    opacity: 0;
     display: var(--fx);
     transition: all .5s;
 }
@@ -221,6 +220,7 @@ html {
     #menu_options {
         top: 0;
         right: 0;
+        opacity: 0;
         width: 100vw;
         z-index: 10;
         height: 100vh;
@@ -283,8 +283,9 @@ html {
     #menu_options {
         top: 0;
         right: 0;
-        width: 100vw;
+        opacity: 0;
         z-index: 10;
+        width: 100vw;
         height: 100vh;
         padding-top: 3rem;
         display: var(--fx);
