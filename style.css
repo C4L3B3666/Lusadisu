@@ -42,7 +42,7 @@ html {
     padding: .1rem 4rem;
     position: var(--fxd);
     align-items: var(--cr);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(4px);
     justify-content: var(--sb);
     border-radius: var(--radius);
 }
