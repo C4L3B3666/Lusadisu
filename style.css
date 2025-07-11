@@ -135,7 +135,7 @@ html {
 #content_main_hero {
     width: 100vw;
     height: 100vh;
-    background: var(--cr) / cover url('img/imagem.jpg') no-repeat fixed;
+    background: var(--cr) / cover url('img/imagem.jpg') no-repeat;
 }
 
 #nav_main_text {
