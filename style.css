@@ -12,12 +12,13 @@
     --radius: 9999px;
     --sa: space-around;
     --green: #7ED957;
-    --black: #191818;
     --sb: space-between;
     --inl: inline-block;
+    --black_primary: #191818;
     --shadow: 0 0 14px #7ED957;
     --borda: 2px solid #7ED957;
-    --black1:rgba(2, 2, 2, 0.7);
+    --black_third:rgba(2, 2, 2, 0.94);
+    --black_secundary:rgba(2, 2, 2, 0.7);
     --gst: "Geist", system-ui, sans-serif;
     --inter: "Inter", system-ui, sans-serif;
 }
@@ -46,13 +47,20 @@ html {
     border-radius: var(--radius);
 }
 
+#menu.mostrar_menu_lateral #menu_options {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
 #imgLogoMenu {
     width: 120px;
 }
 
 #menu_options {
     gap: 2rem;
+    opacity: 0;
     display: var(--fx);
+    transition: all .5s;
 }
 
 .option_menu_mobile {
@@ -135,9 +143,9 @@ html {
     display: var(--fx);
     text-align: center;
     align-items: var(--cr);
-    background: var(--black1);
     justify-content: var(--cr);
     backdrop-filter: blur(1px);
+    background: var(--black_secundary);
 }
 
 #nav_main_text #div_content_text_nav_btns {
@@ -201,11 +209,11 @@ html {
         display: var(--fx);
         position: var(--abs);
         align-items: var(--cr);
-        background: var(--black1);
         backdrop-filter: blur(6px);
         justify-content: var(--sa);
         flex-direction: var(--col);
         transform: translateX(100%);
+        background: var(--black_third);
     }
 
     .link_btn_menu_desktop {
@@ -263,11 +271,11 @@ html {
         display: var(--fx);
         position: var(--abs);
         align-items: var(--cr);
-        background: var(--black1);
         backdrop-filter: blur(6px);
         justify-content: var(--sa);
         flex-direction: var(--col);
         transform: translateX(100%);
+        background: var(--black_third);
     }
 
     .link_btn_menu_desktop {
