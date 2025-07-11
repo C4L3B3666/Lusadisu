@@ -155,6 +155,7 @@ html {
 }
 
 .div_personalizada {
+    font-size: 25pt;
     padding-inline: 2px;   
     display: var(--inl);
     transform: rotate(-5deg);
@@ -179,7 +180,8 @@ html {
         width: 100px;
     }
     
-    #nav_logo_menu {
+    #nav_logo_menu, 
+    #nav_menu_hamburguer {
         z-index: 100;
     }
 
