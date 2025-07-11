@@ -95,7 +95,8 @@ html {
     border: 2px solid transparent;
 }
 
-.button_secundary:hover {
+.button_secundary:hover,
+.button_secundary:active {
     color: var(--white);
     background: var(--green);
     box-shadow: var(--shadow);
@@ -191,11 +192,12 @@ html {
         width: 100vw;
         z-index: 10;
         height: 100vh;
+        padding-top: 3rem;
         display: var(--fx);
         position: var(--abs);
         align-items: var(--cr);
         background: var(--black1);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(6px);
         justify-content: var(--sa);
         flex-direction: var(--col);
         transform: translateX(100%);
