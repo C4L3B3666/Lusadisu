@@ -121,10 +121,28 @@ html {
     display: var(--nn);
 }
 
+#menu.mostrar_menu_lateral .linha_hamburguer:nth-child(1) {
+    right: 10px;
+}
+
+#menu.mostrar_menu_lateral .linha_hamburguer:nth-child(3) {
+    left: 10px;
+}
+
+#menu .linha_hamburguer:nth-child(1) {
+    right: 0;
+}
+
+#menu .linha_hamburguer:nth-child(3) {
+    left: 0;
+}
+
 #nav_menu_hamburguer .linha_hamburguer {
     width: 35px;
     height: 4px;
     margin: 4px;
+    position: relative;
+    transition: all .3s;
     background: var(--green);
     border-radius: var(--radius);
 }
