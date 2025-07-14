@@ -35,17 +35,15 @@ html {
 }
 
 #menu {
-    width: 97%;
-    height: 4rem;
+    width: 100%;
     z-index: 10;
+    height: 4rem;
     display: var(--fx);
-    margin: 1rem 1.5rem;
     padding: .1rem 4rem;
     position: var(--fxd);
     align-items: var(--cr);
     backdrop-filter: blur(4px);
     justify-content: var(--sb);
-    border-radius: var(--radius);
 }
 
 #menu.mostrar_menu_lateral #menu_options {
@@ -200,11 +198,12 @@ html {
     font-family: var(--inter)
 }
 
+.div_main {
+    padding-inline: 4rem;
+}
+
 @media screen and (max-width: 768px) {
     #menu {
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
         padding-inline: 2rem;
     }
 
@@ -260,14 +259,18 @@ html {
     .div_personalizada {
         font-size: 22pt;;
     }
+    .div_main {
+        padding-inline: 2rem;
+    }
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+/* Anteriormente: @media screen and (min-width: 768px) and (max-width: 1024px)
+Agora: @media screen and (min-width: 768px) and (max-width: 1366px) */
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
      #menu {
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
         padding-inline: 2rem;
     }
 
@@ -331,8 +334,8 @@ html {
     .div_personalizada {
         font-size: 22pt;;
     }
+
+    .div_main {
+        padding-inline: 2rem;
+    }
 }
-
-/* @media screen and (min-width: 1024px) and (max-width: 1366px) {
-
-} */
