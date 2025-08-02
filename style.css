@@ -18,7 +18,7 @@
     --shadow: 0 0 14px #7ED957;
     --borda: 2px solid #7ED957;
     --black_third:rgba(2, 2, 2, 0.94);
-    --black_secundary:rgba(2, 2, 2, 0.7);
+    --black_secundary:rgba(0, 0, 0, 0.88);
     --gst: "Geist", system-ui, sans-serif;
     --inter: "Inter", system-ui, sans-serif;
 }
