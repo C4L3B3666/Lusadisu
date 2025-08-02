@@ -11,12 +11,12 @@
     --abs: absolute;
     --radius: 9999px;
     --sa: space-around;
-    --green: #7ED957;
+    --green: #28A745;
     --sb: space-between;
     --inl: inline-block;
     --black_primary: #191818;
-    --shadow: 0 0 14px #7ED957;
-    --borda: 2px solid #7ED957;
+    --shadow: 0 0 14px #155724;
+    --borda: 2px solid #28A745;
     --black_third:rgba(2, 2, 2, 0.94);
     --black_secundary:rgba(0, 0, 0, 0.88);
     --gst: "Geist", system-ui, sans-serif;
@@ -87,6 +87,7 @@ html {
     box-shadow: var(--shadow);
     font-family: var(--inter);
     border-radius: var(--radius);
+    background: linear-gradient(135deg, #218838 0%, #155724 100%);
 }
 
 #nav_btns_menu {
@@ -104,6 +105,7 @@ html {
 .button_secundary:hover,
 .button_secundary:active {
     color: var(--white);
+    border: var(--borda);
     background: var(--green);
     box-shadow: var(--shadow);
 }
@@ -200,6 +202,32 @@ html {
 
 .div_main {
     padding-inline: 4rem;
+}
+
+.texto_personalizado {
+    font-weight: 800;
+    color: var(--green);
+}
+
+.fa-trophy {
+    margin-left: 5px;
+    display: inline-block;
+    animation: pulse 1.6s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
 }
 
 @media screen and (max-width: 768px) {
