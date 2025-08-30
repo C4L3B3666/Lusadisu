@@ -5,3 +5,10 @@ menuHamburguer.addEventListener("click", ()=> {
     menu.classList.toggle("mostrar_menu_lateral")
 
 })
+
+document.querySelectorAll(".botao_numero").forEach(b => {
+    b.addEventListener("click", ()=> {
+        b.classList.toggle("escolhido")
+        console.log("Sera")
+    })
+})

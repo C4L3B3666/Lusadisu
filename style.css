@@ -339,7 +339,7 @@ html::-webkit-scrollbar-track {
     font-family: var(--inter);
 }
 
-.botao_numero:hover {
+.botao_numero.escolhido {
     opacity: 100%;
     color: var(--white);
     background: var(--green);
